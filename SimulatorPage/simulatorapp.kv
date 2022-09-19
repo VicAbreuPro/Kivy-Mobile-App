@@ -1,0 +1,366 @@
+<SimPage>
+    id: sim_page
+    orientation: 'vertical'
+
+    BoxLayout:
+        size_hint_y: None
+        height: 60
+        orientation: 'vertical'
+        Label:
+            text: 'Simulador'
+            font_name: './Font/alba.TTF'
+            font_size: 30
+            color: 0, 128, 0
+            outline_color: 0, 0, 0
+            outline_width: 2
+    Label:
+        id:empty_label_9
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 100
+        Label:
+            id: intro_info
+            halign: 'center'
+            text: 'Simulador de custos por equipamento e consumo \n mensal atual. Insira nos campos abaixo as \n respetivas informações para simular futuros custos. \n Insira o tipo de equipamento, o seu consumo em watts e \n aproximadamente quantas horas utiliza \n tal equipamento por dia.'
+            color: 0, 128, 0
+            bold: True
+            outline_color: 0, 0, 0
+            outline_width: 2
+
+    BoxLayout:
+        id: empty_box_1
+        size_hint_y: None
+        height: 100
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 30
+        spacing: 20
+        padding:  49.5, 0, 0 , 0 # horizontal alignment
+        Label:
+            id: intro_info_aux
+            size_hint_x: None
+            width: 300
+            text: 'Consumo Mensal Atual (em Kw):'
+            bold: True
+            outline_color: 0, 0, 0
+            outline_width: 2
+            color: 0, 128, 0
+            halign: 'center'
+
+        TextInput:
+            id: m_consume
+            size_hint_y: None
+            size_hint_x: None
+            height: 30
+            width: 300
+            multiline: False
+            halign: 'center'
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_x: None
+            width: 300
+            spacing: 80
+            Label:
+                text: 'Equipamento'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Consumo em Watts'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Horas de Uso'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+
+        Label:
+            id: empty_label_10
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        size_hint_x: None
+        width: 400
+        height: 150
+        spacing: 5
+
+        Label:
+            id: empty_label_11
+            size_hint_x: None
+            width: 16
+        ScrollView:
+            size_hint: 1, None
+            size_hint_y: None
+            height: 150
+            GridLayout:
+                size_hint: 1, None
+                height: 400
+                cols: 3
+                rows: 8
+                spacing: 20
+                TextInput:
+                    id: n_equip_1
+                    hint_text: 'Equip1'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_1
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h1
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: n_equip_2
+                    hint_text: 'Equip2'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_2
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h2
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: n_equip_3
+                    hint_text: 'Equip3'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_3
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h3
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: n_equip_4
+                    hint_text: 'Equip4'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_4
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h4
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: n_equip_5
+                    hint_text: 'Equip5'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_5
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h5
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: n_equip_6
+                    hint_text: 'Equip6'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_6
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h6
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: n_equip_7
+                    hint_text: 'Equip7'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_7
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h7
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: n_equip_8
+                    hint_text: 'Equip8'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: m_consume_8
+                    hint_text: 'Consumo'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+                TextInput:
+                    id: h8
+                    hint_text: 'Horas'
+                    size_hint_y: None
+                    size_hint_x: None
+                    height: 30
+                    width: 105
+                    multiline: False
+                    halign: 'center'
+
+    BoxLayout:
+        id: empty_box_2
+        size_hint_y: None
+        height: 30
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        size_hint_x: None
+        width: 400
+        height: 50
+        spacing: 5
+        Label:
+            id:empty_label_12
+        Button:
+            id: b1
+            text: 'Simular'
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+             # on_release: root.update_info()
+            on_release: root.result_page()
+        Button:
+            id: b2
+            text: 'Voltar'
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+            on_release: root.back_page()
+        Label:
+            id: empty_label_13
+
+
+    BoxLayout:
+        id: empty_box_3
+        size_hint_y: None
+        height: 60

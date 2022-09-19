@@ -1,0 +1,207 @@
+<ConfigPage>
+    orientation: 'vertical'
+
+    Label:
+        id: Title
+        size_hint_y: None
+        height: 100
+        text: 'Configurações'
+        bold: True
+        font_name: './Font/alba.TTF'
+        font_size: 25
+        color: 0, 128, 0
+        outline_color: 0, 0, 0
+        outline_width: 4
+
+    Label:
+        id: empty_subtitle
+        size_hint_y: None
+        height: 40
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        BoxLayout:
+            orientation: 'horizontal'
+            size_hint_y: None
+            height: 30
+            spacing: 30
+
+            Label:
+                id: rede_info
+                size_hint_x: None
+                size_hint_y: None
+                height: 35
+                width: 70
+                text: 'Rede :'
+                font_size: 20
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            TextInput:
+                id: rede_input
+                hint_text: 'redeExample123'
+                size_hint_x: None
+                size_hint_y: None
+                height: 27
+                width: 200
+                halign: 'center'
+            Button:
+                id: button_rede
+                text: 'Alterar'
+                bold: True
+                font_name: './Font/alba.TTF'
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                size_hint_x: None
+                size_hint_y: None
+                height: 27
+                width: 60
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                id: empty_label
+                size_hint_x: None
+                width: 80
+            Button:
+                id: button_profile
+                text: 'Editar Perfil'
+                bold: True
+                font_name: './Font/alba.TTF'
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                size_hint_x: None
+                size_hint_y: None
+                height: 30
+                width: 240
+                on_release: root.edit_prof()
+            Label:
+                id: empty_label
+
+        BoxLayout:
+            orientation: 'horizontal'
+            spacing: 28
+            Label:
+                id: tema_info
+                size_hint_x: None
+                size_hint_y: None
+                height: 35
+                width: 80
+                text: 'Tema :'
+                font_size: 20
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Button:
+                id: button_rede
+                text: 'Dia'
+                bold: True
+                font_name: './Font/alba.TTF'
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                size_hint_x: None
+                size_hint_y: None
+                height: 27
+                width: 80
+            Button:
+                id: button_rede
+                text: 'Noite'
+                bold: True
+                font_name: './Font/alba.TTF'
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                size_hint_x: None
+                size_hint_y: None
+                height: 27
+                width: 80
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                id: empty_label
+                size_hint_x: None
+                width: 80
+            Button:
+                id: button_profile
+                text: 'Vincular Conta'
+                bold: True
+                font_name: './Font/alba.TTF'
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                size_hint_x: None
+                size_hint_y: None
+                height: 30
+                width: 240
+            Label:
+                id: empty_label
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                id: empty_label
+                size_hint_x: None
+                width: 80
+            Button:
+                id: button_profile
+                text: 'Acessibilidade'
+                bold: True
+                font_name: './Font/alba.TTF'
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                size_hint_x: None
+                size_hint_y: None
+                height: 30
+                width: 240
+            Label:
+                id: empty_label
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                id: empty_label
+                size_hint_x: None
+                width: 80
+            Button:
+                id: button_profile
+                text: 'Politica de Privacidade'
+                bold: True
+                font_name: './Font/alba.TTF'
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                size_hint_x: None
+                size_hint_y: None
+                height: 30
+                width: 240
+            Label:
+                id: empty_label
+
+
+    BoxLayout:
+        id: empty_box_2
+        size_hint_y: None
+        height: 60
+    BoxLayout:
+        id: box1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 60
+
+        Label:
+            id: empty_aux_2
+
+        Button:
+            id: b2
+            text: 'Voltar'
+            size_hint_x: None
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            font_size: 25
+            bold: True
+            width: 200
+            on_release: root.back_page()
+
+        Label:
+            id: empty_aux_2
+    Label:
+        id: empty_aux_2
+        size_hint_y: None
+        height: 50

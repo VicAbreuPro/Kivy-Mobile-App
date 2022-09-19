@@ -1,0 +1,125 @@
+<InitialPage>:
+    id: init_page
+    orientation: 'vertical' #orientation of first page
+    spacing: 20 #spacing between widgets
+    space_x: self.size[0]/3
+
+    BoxLayout:
+        size_hint_y: None # Declare to kivy not set any default size hint on y
+        height: 40
+        orientation: 'vertical'
+        spacing: 100
+        Label:
+            id: empty_label_1
+        Label:
+            text: "Eco World App"
+            font_name: './Font/alba.TTF'
+            font_size: 50
+            color: 0, 128, 0
+            outline_color: 0, 0, 0
+            outline_width: 4
+
+    BoxLayout:
+        orientation: 'vertical'
+        Image:
+            source: "./Images/logo.png"
+
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding:  40.5, 0, 0 , 0 # horizontal alignment
+        spacing: 10
+        BoxLayout:
+            id: first_line_grid
+            size_hint_y: None
+            size_hint_x: None
+            width: 650
+            height: 60
+            orientation: 'horizontal'
+            spacing: 15
+            Button:
+                text: 'Simulador'
+                font_name: './Font/alba.TTF'
+                font_size: 30
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                on_release: root.simulator_button()
+            Button:
+                text: 'Gestor SM'
+                font_name: './Font/alba.TTF'
+                font_size: 25
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                on_release: root.smart_manager_button()
+            Label:
+                id: empty_label_2
+            Label:
+                id: empty_label_3
+
+        BoxLayout:
+            id: second_line_grid
+            size_hint_y: None
+            size_hint_x: None
+            width: 650
+            height: 60
+            orientation: 'horizontal'
+            spacing: 15
+            Button:
+                text: 'Perfil'
+                font_name: './Font/alba.TTF'
+                font_size: 30
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                on_release: root.profile_button()
+            Button:
+                text: 'Eco Friends'
+                font_name: './Font/alba.TTF'
+                font_size: 25
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                on_release: root.eco_button()
+            Label:
+                id: empty_label_4
+            Label:
+                id: empty_label_5
+
+        BoxLayout:
+            id: third_line_grid
+            size_hint_y: None
+            size_hint_x: None
+            width: 650
+            height: 60
+            orientation: 'horizontal'
+            spacing: 15
+            Button:
+                text: 'Config'
+                font_name: './Font/alba.TTF'
+                font_size: 30
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                on_release: root.config_button()
+            Button:
+                text: 'Sair'
+                font_name: './Font/alba.TTF'
+                font_size: 30
+                color: 0, 0, 0
+                background_normal: './Images/hdgreen.png'
+                on_release: root.exit_button()
+            Label:
+                id: empty_label_6
+            Label:
+                id: empty_label_7
+
+    BoxLayout:
+        size_hint_y: None
+        height: 50
+        orientation: 'vertical'
+        Label:
+            id: empty_label_8
+
+        Label: #This Label is for positioning upper content on the center position Y
+            id: last_info
+            text: 'Saiba Mais em www.ecoworld.pt'
+            color: 0, 128, 0
+            outline_color: 0, 0, 0
+            outline_width: 2

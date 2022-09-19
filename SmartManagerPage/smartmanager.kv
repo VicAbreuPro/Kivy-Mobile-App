@@ -1,0 +1,189 @@
+<SmartPage>
+    id: sm_page
+    orientation: 'vertical'
+
+    BoxLayout:
+        size_hint_y: None
+        height: 60
+        orientation: 'vertical'
+        Label:
+            text: 'Smart Manager'
+            font_name: './Font/alba.TTF'
+            font_size: 30
+            color: 0, 128, 0
+            outline_color: 0, 0, 0
+            outline_width: 2
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 100
+        Label:
+            id: intro_info
+            halign: 'center'
+            text: 'Gestor de Equipamentos Smart. \n Abaixo estão listados os equipamentos \n que possui e suas respetivas informações \n tal como seu consumo e histórico.'
+            color: 0, 128, 0
+            bold: True
+            outline_color: 0, 0, 0
+            outline_width: 2
+
+    Label:
+        id: empty_label_17
+        size_hint_y: None
+        height: 50
+
+    ScrollView:
+        size_hint_y: None
+        size_hint_x: None
+        height: 250
+        width: 400
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint_y: None
+            size_hint_x: None
+            height: 490
+            width: 200
+            spacing: 5
+            padding:  65, 0, 0 , 0 # horizontal alignment
+
+            Accordion:
+                orientation: 'vertical'
+                size_hint_x: None
+                width: 280
+                AccordionItem:
+                    title: "Fogão"
+                    background_normal: './Images/hdgreen.png'
+                    BoxLayout:
+                        size_hint_x: None
+                        width: 280
+                        Label:
+                            halign: 'left'
+                            text: "Consumo por hora:              2900Watts\nConsumo Médio Diário:         8.7 QW/h\nTempo de Uso Diário:             3-4 Horas\nConsumo Médio Mensal:        250 QW\nTempo de Uso Mensal:            105H\nCertificado Energético:                  A\nData de Instalação:              02/04/2021\nTotal Consumido:                 250QW"
+                            color: 0, 128, 0
+                            bold: True
+                            outline_color: 0, 0, 0
+                            outline_width: 2
+                AccordionItem:
+                    title: "Máquina de Lavar Roupa"
+                    background_normal: './Images/hdgreen.png'
+                    BoxLayout:
+                        size_hint_x: None
+                        width: 280
+                        Label:
+                            halign: 'left'
+                            text: "Consumo por hora:              285Watts\nConsumo Médio Diário:         1.14 QW/h\nTempo de Uso Diário:             2-4 Horas\nConsumo Médio Mensal:        5.7 QW\nTempo de Uso Mensal:            80H\nCertificado Energético:                  A++\nData de Instalação:              02/04/2021\nTotal Consumido:                 5.7QW"
+                            color: 0, 128, 0
+                            bold: True
+                            outline_color: 0, 0, 0
+                            outline_width: 2
+                AccordionItem:
+                    title: "Frigorífico"
+                    background_normal: './Images/hdgreen.png'
+                    BoxLayout:
+                        size_hint_x: None
+                        width: 280
+                        Label:
+                            halign: 'left'
+                            text: "Consumo por hora:              200Watts\nConsumo Médio Diário:         4.8 QW/h\nTempo de Uso Diário:             24 Horas\nConsumo Médio Mensal:        144 QW\nTempo de Uso Mensal:            720H\nCertificado Energético:                  A+\nData de Instalação:              02/04/2021\nTotal Consumido:                 144QW"
+                            color: 0, 128, 0
+                            bold: True
+                            outline_color: 0, 0, 0
+                            outline_width: 2
+                AccordionItem:
+                    title: "Smart TV"
+                    background_normal: './Images/hdgreen.png'
+                    BoxLayout:
+                        size_hint_x: None
+                        width: 280
+                        Label:
+                            halign: 'left'
+                            text: "Consumo por hora:              60Watts\nConsumo Médio Diário:         0.480 QW/h\nTempo de Uso Diário:             6-8 Horas\nConsumo Médio Mensal:        14,4 QW\nTempo de Uso Mensal:            210H\nCertificado Energético:                  B+\nData de Instalação:              02/04/2021\nTotal Consumido:                 14,4QW"
+                            color: 0, 128, 0
+                            bold: True
+                            outline_color: 0, 0, 0
+                            outline_width: 2
+                AccordionItem:
+                    title: "Caldeira"
+                    background_normal: './Images/hdgreen.png'
+                    BoxLayout:
+                        size_hint_x: None
+                        width: 280
+                        Label:
+                            halign: 'left'
+                            text: "Consumo por hora:              1500Watts\nConsumo Médio Diário:         1.5 QW/h\nTempo de Uso Diário:             2-3 Horas\nConsumo Médio Mensal:        45 QW\nTempo de Uso Mensal:            90H\nCertificado Energético:                  B\nData de Instalação:              02/04/2021\nTotal Consumido:                 45QW"
+                            color: 0, 128, 0
+                            bold: True
+                            outline_color: 0, 0, 0
+                            outline_width: 2
+                AccordionItem:
+                    title: "Sound System"
+                    background_normal: './Images/hdgreen.png'
+                    font_name: './Font/alba.TTF'
+                    BoxLayout:
+                        size_hint_x: None
+                        width: 280
+                        Label:
+                            halign: 'left'
+                            text: "Consumo por hora:              750Watts\nConsumo Médio Diário:         3 QW/h\nTempo de Uso Diário:             3-5 Horas\nConsumo Médio Mensal:        90 QW\nTempo de Uso Mensal:            120H\nCertificado Energético:                      A\nData de Instalação:              02/04/2021\nTotal Consumido:                 90QW"
+                            color: 0, 128, 0
+                            bold: True
+                            outline_color: 0, 0, 0
+                            outline_width: 2
+                AccordionItem:
+                    title: "Led Painel Controller"
+                    font_name: './Font/alba.TTF'
+                    bold: True
+                    color: 0, 0, 0
+                    background_normal: './Images/hdgreen.png'
+                    BoxLayout:
+                        size_hint_x: None
+                        width: 280
+                        Label:
+                            halign: 'left'
+                            text: "Consumo por hora:              150Watts\nConsumo Médio Diário:         2.1 QW/h\nTempo de Uso Diário:             8-14 Horas\nConsumo Médio Mensal:        63 QW\nTempo de Uso Mensal:            360H\nCertificado Energético:                  A+\nData de Instalação:              02/04/2021\nTotal Consumido:                 63QW"
+                            color: 0, 128, 0
+                            bold: True
+                            outline_color: 0, 0, 0
+                            outline_width: 2
+
+
+    Label:
+        id: empty_label_18
+        size_hint_y: None
+        height: 60
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        size_hint_x: None
+        width: 400
+        height: 50
+        spacing: 5
+        Label:
+            id:empty_label_19
+        Button:
+            id: b1
+            text: 'Equip +'
+            font_name: './Font/alba.TTF'
+            bold: True
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+             # on_release: root.update_info()
+            on_release: root.add_equip_page()
+        Button:
+            id: b2
+            text: 'Voltar'
+            font_name: './Font/alba.TTF'
+            bold: True
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            on_release: root.back_page()
+        Label:
+            id: empty_label_20
+
+
+    BoxLayout:
+        id: box_aux
+        size_hint_y: None
+        height: 30

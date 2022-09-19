@@ -1,0 +1,125 @@
+<ProfileEdit>
+    orientation: 'vertical'
+
+    Label:
+        id: Title
+        text: 'Editar Perfil'
+        bold: True
+        font_name: './Font/alba.TTF'
+        font_size: 30
+        color: 0, 128, 0
+        outline_color: 0, 0, 0
+        outline_width: 4
+
+    Label:
+        id: empty_box_1
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 200
+        width: 400
+        GridLayout:
+            id: profile_info
+            cols: 2
+            spacing: 20
+            Label:
+                id: profile_name_1
+                text: 'Utilizador'
+                size_hint_y: None
+                size_hint_x: None
+                width: 200
+                height: 30
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+                halign: 'left'
+
+            TextInput:
+                id: profi_name_resp
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+            Label:
+                id: prof_2
+                text: 'Nome'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            TextInput:
+                id: prof_2_resp
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+            Label:
+                id: equip_cert
+                text: 'Alterar E-Mail'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            TextInput:
+                id: equip_cert_resp
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+
+    BoxLayout:
+        id: empty_box
+        size_hint_y: None
+        height: 150
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        size_hint_x: None
+        width: 400
+        height: 50
+        spacing: 5
+        Label:
+            id:empty_ax
+            size_hint_x: None
+            width: 78
+        Button:
+            id: b1
+            text: 'Alterar perfil'
+            size_hint_x: None
+            width: 120
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+        Button:
+            id: b2
+            text: 'Voltar'
+            size_hint_x: None
+            width: 120
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+            on_release: root.back_page()
+        Label:
+            id: empty_aux
+
+
+    BoxLayout:
+        id: box_aux
+        size_hint_y: None
+        height: 60

@@ -1,0 +1,49 @@
+<MainWindow>:
+    id: main_win
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+            source: 'Images/background_app.jpg' # Background Image of all pages on app
+    ScreenManager:
+        id: screen_manager
+
+        Screen:
+            id: initial_page
+            name: 'initial_page'
+
+        Screen:
+            id: simulator_page
+            name: 'simulator_page'
+
+        Screen:
+            id: sim_result_page
+            name: 'sim_result_page'
+
+        Screen:
+            id: smart_page
+            name: 'smart_page'
+
+        Screen:
+            id: equip_page
+            name: 'equip_page'
+
+        Screen:
+            id: profile_page
+            name: 'profile_page'
+
+        Screen:
+            id: profile_edit
+            name: 'profile_edit'
+
+        Screen:
+            id: config_page
+            name: 'config_page'
+
+        Screen:
+            id: eco_page
+            name: 'eco_page'
+
+        Screen:
+            id: add_friend_page
+            name: 'add_friend_page'

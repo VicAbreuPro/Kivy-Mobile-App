@@ -1,0 +1,200 @@
+<ProfilePage>
+    orientation: 'vertical'
+
+    Label:
+        id: Title_prof
+        text: 'Perfil de Utilizador'
+        bold: True
+        font_name: './Font/alba.TTF'
+        font_size: 25
+        color: 0, 128, 0
+        outline_color: 0, 0, 0
+        outline_width: 4
+
+    Label:
+        id: empty_box_1
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 200
+        width: 400
+
+        GridLayout:
+            id: info_equip
+            cols: 2
+            spacing: 20
+            Label:
+                id: info1
+                text: 'Utilizador:'
+                size_hint_y: None
+                size_hint_x: None
+                width: 200
+                height: 30
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+                halign: 'left'
+
+            Label:
+                id: info2
+                text: 'Vlapebreu'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                multiline: False
+                halign: 'center'
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info3
+                text: 'Nome:'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info4
+                text: '      Vladys Pedro Abreu'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+                outline_color: 0, 0, 0
+                outline_width: 4
+
+            Label:
+                id: info5
+                text: 'Email:'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info6
+                text: '      vlapebreu@sapo.pt'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info7
+                text: 'Consumo Médio Mensal:'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info8
+                text: '          3KW'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info9
+                text: 'Nº Equipamentos:'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info10
+                text: '          7'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info11
+                text: 'Código de Uitlizador:'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 200
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 4
+            Label:
+                id: info12
+                text: '          V420JJCJ'
+                size_hint_y: None
+                size_hint_x: None
+                height: 30
+                width: 150
+                multiline: False
+                halign: 'center'
+                outline_color: 0, 0, 0
+                outline_width: 4
+
+    BoxLayout:
+        id: empty_box
+        size_hint_y: None
+        height: 150
+
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        size_hint_x: None
+        width: 400
+        height: 50
+        spacing: 5
+        Label:
+            id:empty_ax
+            size_hint_x: None
+            width: 78
+        Button:
+            id: b1
+            text: 'Editar Perfil'
+            size_hint_x: None
+            width: 120
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+            on_release: root.edit_profile()
+        Button:
+            id: b2
+            text: 'Voltar'
+            size_hint_x: None
+            width: 120
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+            on_release: root.back_page()
+        Label:
+            id: empty_aux
+
+
+    BoxLayout:
+        id: box_aux
+        size_hint_y: None
+        height: 60

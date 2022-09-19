@@ -1,0 +1,159 @@
+<EcoPage>
+    orientation: 'vertical'
+
+    Label:
+        id: eco_tittle
+        text: 'Eco Friends'
+        bold: True
+        font_name: './Font/alba.TTF'
+        font_size: 25
+        color: 0, 128, 0
+        outline_color: 0, 0, 0
+        outline_width: 4
+
+    Label:
+        id: empty_1
+        size_hint_y: None
+        height: 300
+
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            id: empty_2
+            size_hint_x: None
+            width: 80
+        ScrollView:
+            size_hint_y: None
+            size_hint_x: None
+            height: 300
+            width: 400
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: 400
+                width: 200
+                Accordion:
+                    orientation: 'vertical'
+                    size_hint_x: None
+                    width: 250
+                    AccordionItem:
+                        title: "carlitos67"
+                        background_normal: './Images/hdgreen.png'
+                        BoxLayout:
+                            size_hint_x: None
+                            width: 280
+                            Label:
+                                halign: 'left'
+                                text: "Nome:              Carlos Sousa\nE-Mail:     carlitos13@gmail.com\nConsumo Médio:          60KW\nNº Equipamentos:         14"
+                                color: 0, 128, 0
+                                bold: True
+                                outline_color: 0, 0, 0
+                                outline_width: 2
+                    AccordionItem:
+                        title: "sonita24"
+                        background_normal: './Images/hdgreen.png'
+                        BoxLayout:
+                            size_hint_x: None
+                            width: 280
+                            Label:
+                                halign: 'left'
+                                text: "Nome:              Sónia Costa\nE-Mail:     soniaJ18@gmail.com\nConsumo Médio:          24KW\nNº Equipamentos:         6"
+                                color: 0, 128, 0
+                                bold: True
+                                outline_color: 0, 0, 0
+                                outline_width: 2
+                    AccordionItem:
+                        title: "bertinholipe"
+                        background_normal: './Images/hdgreen.png'
+                        BoxLayout:
+                            size_hint_x: None
+                            width: 280
+                            Label:
+                                halign: 'left'
+                                text: "Nome:              Alberto Filipe\nE-Mail:     berto1366@gmail.com\nConsumo Médio:          20KW\nNº Equipamentos:         8"
+                                color: 0, 128, 0
+                                bold: True
+                                outline_color: 0, 0, 0
+                                outline_width: 2
+                    AccordionItem:
+                        title: "juju420"
+                        background_normal: './Images/hdgreen.png'
+                        BoxLayout:
+                            size_hint_x: None
+                            width: 280
+                            Label:
+                                halign: 'left'
+                                text: "Nome:              Julia Silva\nE-Mail:     juju22@gmail.com\nConsumo Médio:          75KW\nNº Equipamentos:         9"
+                                color: 0, 128, 0
+                                bold: True
+                                outline_color: 0, 0, 0
+                                outline_width: 2
+                    AccordionItem:
+                        title: "jojolijo"
+                        background_normal: './Images/hdgreen.png'
+                        BoxLayout:
+                            size_hint_x: None
+                            width: 280
+                            Label:
+                                halign: 'left'
+                                text: "Nome:              João Lijó\nE-Mail:  vertiginous@gmail.com\nConsumo Médio:          65KW\nNº Equipamentos:         7"
+                                color: 0, 128, 0
+                                bold: True
+                                outline_color: 0, 0, 0
+                                outline_width: 2
+                    AccordionItem:
+                        title: "vladjynx"
+                        background_normal: './Images/hdgreen.png'
+                        BoxLayout:
+                            size_hint_x: None
+                            width: 280
+                            Label:
+                                halign: 'left'
+                                text: "Nome:              Vladys Max\nE-Mail:     vladngg@gmail.com\nConsumo Médio:          90KW\nNº Equipamentos:         11"
+                                color: 0, 128, 0
+                                bold: True
+                                outline_color: 0, 0, 0
+                                outline_width: 2
+    BoxLayout:
+        id: empty_2
+        size_hint_y: None
+        height: 40
+    BoxLayout:
+        orientation: 'horizontal'
+        size_hint_y: None
+        size_hint_x: None
+        width: 400
+        height: 50
+        spacing: 5
+        Label:
+            id:empty_ax
+            size_hint_x: None
+            width: 78
+        Button:
+            id: b1
+            text: 'Adicionar Amigo'
+            size_hint_x: None
+            width: 120
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+            on_release: root.add_friend_button()
+        Button:
+            id: b2
+            text: 'Voltar'
+            size_hint_x: None
+            width: 120
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            bold: True
+            on_release: root.back_page()
+        Label:
+            id: empty_aux
+
+
+    BoxLayout:
+        id: box_aux
+        size_hint_y: None
+        height: 60

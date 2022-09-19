@@ -1,0 +1,143 @@
+<SimPages>
+    id: result_page
+    orientation: 'vertical'
+
+    BoxLayout:
+        size_hint_y: None
+        height: 100
+        orientation: 'vertical'
+        Label:
+            id: empty_label_14
+            size_hint_y: None
+            height: 15
+        Label:
+            text: 'Resultados e estatísticas da Simulação'
+            font_name: './Font/alba.TTF'
+            font_size: 20
+            color: 0, 128, 0
+            outline_color: 0, 0, 0
+            outline_width: 2
+        Label:
+            id: empty_label_15
+            size_hint_y: None
+            height: 65
+        Label:
+            text: 'O consumo total é baseado no conjunto\n do consumo de cada equipamento\nde acordo com a sua respetiva potencia \n e horas de uso por dia.'
+            bold: True
+            color: 0, 128, 0
+            outline_color: 0, 0, 0
+            outline_width: 2
+            halign: 'center'
+
+    BoxLayout:
+        GridLayout:
+            size_hint: 1, None
+            size_hint_x: None
+            height: 300
+            width: 450
+            cols: 2
+            Label:
+                text: 'Consumo Mensal Atual :'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Value1'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Consumo Mensal Previsto :'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Value2'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Consumo Diário previsto :'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Value3'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Consumo Total em Watts :'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Value4'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Economia Gerada :'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Value5'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Média Consumo Equipamentos :'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+            Label:
+                text: 'Value6'
+                bold: True
+                color: 0, 128, 0
+                outline_color: 0, 0, 0
+                outline_width: 2
+
+    Label:
+        id:empty_label_16
+        size_hint_y: None
+        height: 40
+
+    BoxLayout:
+        id: box1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 60
+
+        Label:
+            id: empty_label_17
+
+        Button:
+            id: b2
+            text: 'Voltar'
+            size_hint_x: None
+            font_name: './Font/alba.TTF'
+            color: 0, 0, 0
+            background_normal: './Images/hdgreen.png'
+            font_size: 25
+            bold: True
+            width: 200
+            on_release: root.back_page()
+
+        Label:
+            id: empty_label_18
+    Label:
+        id: empty_label_19
+        size_hint_y: None
+        height: 50
